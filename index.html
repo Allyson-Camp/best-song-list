@@ -12,6 +12,10 @@
     <link rel="icon" type="image/x-icon" href="assets/alchemy-favicon.png" />
 
     <!-- js -->
+    <script
+    defer
+    src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@1.35.7/dist/umd/supabase.min.js"
+></script>
     <script type="module" src="app.js"></script>
 
     <!-- fonts -->
@@ -26,11 +30,16 @@
 
 <body>
     <header>
-        <h1>Top 10 Emo songs that will have you screaming "I'm Not Okay"</h1>
+        <h1>Top 10 Emo songs that will still have you screaming "I'm Not Okay"</h1>
     </header>
 
     <main>
-
+        <section class="main-section">
+            <h2>Choose a song!</h2>
+            <div id="song-list-container">
+                <!-- songs will go here -->
+            </div>
+        </section>
     </main>
 
 </body>
