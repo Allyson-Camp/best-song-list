@@ -15,8 +15,6 @@ export async function getSongs() {
     return data;
 }
 
-//hallpp
-
 //getIndividualSong async function
 
 // export async function getIndividualSong() {
