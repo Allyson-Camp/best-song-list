@@ -1,16 +1,17 @@
 :root {
-    --background: rgb(224, 234, 247);
-    --header-background: rgb(254, 251, 245);
+    background-image: url('../assets/bkrnd.png');
+    background-size: cover;
+    --header-background: rgb(236, 157, 200);
     --primary-font: Corbel, 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', 'DejaVu Sans',
         'Bitstream Vera Sans', 'Liberation Sans', Verdana, 'Verdana Ref', sans-serif;
 }
 
-body {
+/* body {
     font-family: var(--primary-font);
-    background: var(--background);
+    background-image: url('../assets/bkrnd.png');
+    background-size: cover;
     display: grid;
-    grid-template-rows: auto 1fr;
-}
+} */
 
 header {
     position: sticky;
