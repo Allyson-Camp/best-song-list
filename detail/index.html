@@ -8,7 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
     <!-- title and favicon -->
-    <title>MySpace</title>
+    <title>You're so emo</title>
     <link rel="icon" type="image/x-icon" href="assets/alchemy-favicon.png" />
 
     <!-- js -->
@@ -16,27 +16,26 @@
     defer
     src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@1.35.7/dist/umd/supabase.min.js"
 ></script>
-    <script type="module" src="app.js"></script>
+    <script type="module" src="details.js"></script>
 
     <!-- fonts -->
     <!-- see https://fonts.google.com/ -->
 
     <!-- css -->
-    <link rel="stylesheet" href="styles/reset.css" />
-    <link rel="stylesheet" href="styles/global.css" />
+    <link rel="stylesheet" href="../styles/reset.css" />
+    <link rel="stylesheet" href="../styles/global.css" />
     <!-- add link for page specific css -->
 
 </head>
 
 <body>
     <header>
-        <h1>Top 10 Emo songs that will still have you screaming "I'm Not Okay"</h1>
+        <a href="../">Take me Back</a>
     </header>
 
     <main>
         <section class="main-section">
-            <h2>Choose a song!</h2>
-            <div class="song-list-container">
+            <div id="song-detail-container">
                 <!-- songs will go here -->
             </div>
         </section>

@@ -1,24 +1,27 @@
 :root {
-    --background: rgb(224, 234, 247);
-    --header-background: rgb(254, 251, 245);
+    background-image: url('../assets/bkrnd.png');
+    background-size: cover;
+    --header-background: rgba(245, 81, 149, 0.542);
     --primary-font: Corbel, 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', 'DejaVu Sans',
         'Bitstream Vera Sans', 'Liberation Sans', Verdana, 'Verdana Ref', sans-serif;
 }
 
 body {
-    font-family: var(--primary-font);
-    background: var(--background);
-    display: grid;
-    grid-template-rows: auto 1fr;
+    /* font-family: var(--primary-font);
+    background-image: url('../assets/bkrnd.png'); */
+    /* background-size: cover;
+    display: grid; */
 }
 
 header {
+    text-align: center;
     position: sticky;
     top: 0;
     padding: 15px;
     height: 80px;
+    padding-bottom: 85px;
 
-    display: flex;
+    /* display: flex; */
     align-items: center;
     gap: 10px;
 
@@ -32,4 +35,37 @@ header .logo {
 
 main {
     padding: 20px;
+}
+
+h1 {
+    color: white;
+}
+h2 {
+    /* background-color: white; */
+    text-align: center;
+    justify-content: center;
+    color: hotpink;
+    font-size: 3em;
+
+}
+
+.song-list-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.song-card {
+    background-color: white;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: hotpink;
+    border-width: 3px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
 }

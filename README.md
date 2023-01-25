@@ -1,3 +1,5 @@
+![wireframe for best-song-list](./assets/song-wireframe.png)
+
 ## The Golden Rule:
 
 🦸 🦸‍♂️ `Stop starting and start finishing.` 🏁
@@ -25,3 +27,43 @@ Additional considerations:
     -   What needs to live in a persistence layer?
 -   Is there some state we need to initialize?
 -   Ask: should any of this work be abstracted into functions? (i.e., is the work complicated? can it be reused?)
+
+## plan
+
+- make tables
+- connect tables
+- get supabase key/url
+    key: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImVqZWV6YmNrc3hhemV6eGtldGR5Iiwicm9sZSI6ImFub24iLCJpYXQiOjE2NzQ0ODk2MjcsImV4cCI6MTk5MDA2NTYyN30.uPokWkEqMtvLPS0Xe9q-myZON-BEU1EAO4iq7-o0cEk
+    url: https://ejeezbcksxazezxketdy.supabase.co
+- connect to html
+
+    ## html
+    <!-- - list page
+        - hard coded page title
+        -empty div for the list of songs to go -->
+    - song page
+        - hard coded page title?
+        - div for game details
+
+    ## state
+    <!-- - songsData
+        - gets list of songs -->
+    - songData
+        - gets info for 1 song
+
+    ## events
+    - list page
+        - window.eventlistener.load
+            - ask supabase for all songsData
+            - put it into state
+            - loop thorugh songs in state
+                - redner a div for each song
+                - append the div to the html element in dom
+            - refactor render function
+            - refactor a display function
+    - detail page
+        - user clicked on the href from list page
+            - window.eventlistener.load
+            - ask supabase for one songData
+            - display function to display the data
+
