@@ -5,7 +5,7 @@ export function renderSongCard(song) {
     const p = document.createElement('p');
 
     div.classList.add('song-card');
-
+    
     p.textContent = song.title;
     img.src = `./assets/${song.id}.png`;
     a.href = `./detail/?id=${song.id}`;
@@ -39,6 +39,4 @@ export function renderSongDetail(songDetail) {
     div.append(img, titleEl, artistEl, albumEl, yearEl, producerEl);
 //return
     return div;
-
-
 }

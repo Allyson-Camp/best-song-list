@@ -20,7 +20,7 @@ export async function getSongs() {
 export async function getIndividualSong() {
     const { data, error } = await client
         .from('songs')
-        .select('*, year_id (year) ')
+        .select('*, year_id (year)')
         .eq('id', id)
         .single();
 
