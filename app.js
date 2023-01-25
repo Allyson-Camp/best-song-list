@@ -21,7 +21,7 @@ window.addEventListener('load', async () => {
 function displaySongs() {
     for (let song of songsData) {
         //redner a div for each song
-        console.log(songsData, song);
+        // console.log(songsData, song);
         const songEl = renderSongCard(song);
         //append the div to the html element in dom
         songListContainer.append(songEl);
