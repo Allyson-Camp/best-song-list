@@ -17,14 +17,14 @@ export async function getSongs() {
 
 //getIndividualSong async function
 
-// export async function getIndividualSong() {
-//     const { data, error } = await client
-//         .from('songs')
-//         .select('*, ')
-//         .eq('id', id)
-//         .single();
+export async function getIndividualSong() {
+    const { data, error } = await client
+        .from('songs')
+        .select('*, year_id (year) ')
+        .eq('id', id)
+        .single();
 
-//     if (error) console.error(error);
+    if (error) console.error(error);
 
-//     return data;
-// }
+    return data;
+}

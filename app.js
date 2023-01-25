@@ -1,6 +1,6 @@
 /* Imports */
 import { getSongs } from './fetch-utils.js';
-import { } from './render-utils.js';
+import { renderSongCard } from './render-utils.js';
 /* Get DOM Elements */
 const songListContainer = document.querySelector('song-list-container');
 
@@ -11,19 +11,20 @@ let songsData = [];
 
 window.addEventListener('load', async () => {
     const songs = await getSongs();
-
     songsData = songs;
-//display function?
-    // for (let song of songsData) {
-    //     - redner a div for each song
-    //     - append the div to the html element in dom
-    // - refactor render function
-    // - refactor a display function
-    // }
-    // console.log (songsData);
+    // console.log(songsData);
+    displaySongs();
+    
 });
 
-
+function displaySongs() {
+    for (let song of songsData) {
+        //redner a div for each song
+        const songEl = renderSongCard(song);
+        //append the div to the html element in dom
+        songListContainer.append(songEl);
+    }
+}
 
             
 /* Display Functions */
